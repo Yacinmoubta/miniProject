@@ -1,0 +1,34 @@
+
+ion-grid {
+  height: auto; // Ajustez la hauteur selon vos besoins
+
+  // Utilisez les classes de disposition pour centrer la grille
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+
+ion-card {
+ margin: 10px;
+}
+
+ion-content{
+margin-left: 10px;
+margin-right: 10px;
+}
+ion-card-content {
+ overflow-y: auto;
+text-align: center;
+ max-width: 14cm;
+}
+
+
+p.title {
+font-size: 24px; /* Taille de la police */
+font-weight: bold; /* Gras */
+color: black; /* Couleur du texte */
+text-align: center; /* Alignement du texte au centre */
+margin-bottom: 10px; /* Marge en bas */
+}

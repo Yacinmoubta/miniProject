@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { CityMenuPage } from '../city-menu/city-menu.page';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
-  constructor() {}
+  constructor(private navCtrl: NavController) {}
+ 
+  Visit(){
+    this.navCtrl.navigateForward('/city-menu');
+  }
 
 }

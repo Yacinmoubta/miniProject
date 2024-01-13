@@ -11,6 +11,30 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'city-menu',
+    loadChildren: () => import('./city-menu/city-menu.module').then( m => m.CityMenuPageModule)
+  },
+  {
+    path: 'rabat',
+    loadChildren: () => import('./rabat/rabat.module').then( m => m.RabatPageModule)
+  },
+  {
+    path: 'casablanca',
+    loadChildren: () => import('./casablanca/casablanca.module').then( m => m.CasablancaPageModule)
+  },
+  {
+    path: 'fes',
+    loadChildren: () => import('./fes/fes.module').then( m => m.FesPageModule)
+  },
+  {
+    path: 'tanger',
+    loadChildren: () => import('./tanger/tanger.module').then( m => m.TangerPageModule)
+  },
+  {
+    path: 'oujda',
+    loadChildren: () => import('./oujda/oujda.module').then( m => m.OujdaPageModule)
+  },
 ];
 
 @NgModule({

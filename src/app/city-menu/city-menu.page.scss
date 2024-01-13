@@ -1,0 +1,12 @@
+.grid {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+}
+ion-card-title {
+  font-size: 1.5em; /* Taille de la police */
+  font-weight: bold; /* Gras */
+  color: #333; /* Couleur du texte */
+  margin-bottom: 10px; /* Marge en bas */
+ 
+}
+
