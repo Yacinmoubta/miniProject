@@ -12,18 +12,23 @@ import { CasablancaPage } from './casablanca/casablanca.page';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { GoogleMap } from '@capacitor/google-maps';
 import { environment } from 'src/environments/environment';
+import { LoginPage } from './login/login.page';
 
 
 
 const routes: Routes = [
+  { path: '', component: LoginPage },
+  { path: 'login', component: LoginPage },
+];
+const routes1: Routes = [
   { path: '', component: HomePage },
   { path: 'city-menu', component: CityMenuPage },
 ];
-const routes1: Routes = [
+const routes2: Routes = [
   { path: '', component: CityMenuPage },
   { path: 'rabat', component: RabatPage },
 ];
-const routes2: Routes = [
+const routes3: Routes = [
   { path: '', component: CityMenuPage },
   { path: 'casablanca', component: CasablancaPage },
 ];

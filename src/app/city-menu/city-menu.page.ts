@@ -23,7 +23,7 @@ export class CityMenuPage  {
     this.navCtrl.navigateForward('/fes');
   }
   visitTanger(){
-    this.navCtrl.navigateForward('tanger');
+    this.navCtrl.navigateForward('/tanger');
   }
   visitOujda(){
     this.navCtrl.navigateForward('/oujda');
